@@ -1,0 +1,136 @@
+// VARIABLES //
+
+@background: #f0f0f0;
+@white: #ffffff;
+@purple: #7747ac;
+@red: #ff6666;
+@yellow: #fec449;
+@grey: #777;
+@light-grey: #dddddd;
+
+// MIXINS //
+
+
+
+// GENERAL STYLES //
+
+html {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: @background;
+  font-family: 'FreightSans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: @grey;
+  margin: 0;
+}
+.content{
+	padding: 0 20px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+h1 {
+  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 50px;
+}
+a {
+  color: @grey;
+  text-decoration: none;
+
+         transition:.25s;
+      -o-transition:.25s;
+     -ms-transition:.25s;
+    -moz-transition:.25s;
+ -webkit-transition:.25s;
+
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  outline: 0px;
+}
+a:hover {
+  color: @red;
+}
+img {
+  outline: 0;
+  width: 100%;
+  
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+}
+
+
+
+// HEADER //
+
+header{
+  background: @purple;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+  a{
+    color: @white;
+    &:hover{
+    	color: rgba(0,0,0,.2);
+    }
+  }
+}
+
+
+
+// HOMEPAGE //
+
+.blog{
+  article{
+    .post-icon{
+      padding: 30px;
+      display: inline-block;
+      background: @yellow;
+      float: left;
+      
+      -webkit-border-radius: 200px;
+         -moz-border-radius: 200px;
+              border-radius: 200px;
+    }
+    .post-header{
+      display: inline-block;
+      margin-left: 30px;
+    }
+    padding: 30px 0;
+    border-bottom: 1px solid @light-grey;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
+
+// ARTICLE PAGE //
+
+.blogarticle{
+  article{
+  	padding: 30px 0;
+    img {
+      border: 10px solid @white;
+    }
+  }
+}
+
+
+// FOOTER //
+
+footer{
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px 0;
+  border-top: 1px solid @light-grey;
+  background: lighten(@light-grey 5%);
+}
