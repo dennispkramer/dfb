@@ -16,6 +16,10 @@ body {
   max-width: 640px;
   margin: 0 auto;
 }
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
 h1 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   font-size: 40px;
@@ -66,11 +70,19 @@ header a:hover {
 .blog article .post-icon {
   padding: 30px;
   display: inline-block;
-  background: #fec449;
   float: left;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
+}
+.blog article .post-icon-bread {
+  background: #fec449;
+}
+.blog article .post-icon-sweet {
+  background: #ff6666;
+}
+.blog article .post-icon-savory {
+  background: #7747ac;
 }
 .blog article .post-header {
   display: inline-block;

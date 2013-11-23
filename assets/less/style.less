@@ -32,6 +32,10 @@ body {
 	max-width: 640px;
 	margin: 0 auto;
 }
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
 h1 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   font-size: 40px;
@@ -93,12 +97,20 @@ header{
     .post-icon{
       padding: 30px;
       display: inline-block;
-      background: @yellow;
       float: left;
       
       -webkit-border-radius: 200px;
          -moz-border-radius: 200px;
               border-radius: 200px;
+    }
+    .post-icon-bread{
+      background: @yellow;
+    }
+    .post-icon-sweet{
+      background: @red;
+    }
+    .post-icon-savory{
+      background: @purple;
     }
     .post-header{
       display: inline-block;
