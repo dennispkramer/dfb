@@ -16,4 +16,11 @@
 
   <header>
     <h1><a href="<?php echo url() ?>">Dinner For Breakfast</a></h1>
+
+
+	<!-- search form -->
+	<form action="<?php echo url('search') ?>" method="get">
+		<input type="text" placeholder="Search…" name="q" />
+		<input type="submit" value="Search" />
+	</form>
   </header>

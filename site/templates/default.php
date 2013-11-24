@@ -1,35 +1,13 @@
 <?php snippet('header') ?>
 
-<!-- search plugin -->
-<?php
-
-$search = new search(array(
-  'searchfield' => 'q'
-));
-
-$results = $search->results();
-
-?>
-
-<!-- search form -->
-<form action="<?php echo thisURL() ?>">
-  <input type="text" placeholder="Search…" name="q" />
-  <input type="submit" value="Search" />
-</form>
-
-<!-- search results -->
-<?php if($results): ?>
-<ul>
-  <?php foreach($results as $result): ?>
-  <li><a href="<?php echo $result->url() ?>"><?php echo $result->title() ?></a></li>
-  <?php endforeach ?>
-</ul>
-<?php endif ?>
 
 <section class="content blog">
   
-  
-  <?php foreach($page->children()->visible()->flip() as $article): ?>
+
+  <!-- display blog posts -->
+  <?php $articles = $page->children()->visible()->flip()->paginate(10) ?>
+
+  <?php foreach($articles as $article): ?>
   
   <article>
     <?php if($article->template() == 'blogarticle.bread'): ?> 
@@ -60,6 +38,21 @@ $results = $search->results();
   </article>
 
   <?php endforeach ?>
+
+  <!-- pagination -->
+  <?php if($articles->pagination()->hasPages()): ?>
+  <nav class="pagination">  
+
+    <?php if($articles->pagination()->hasNextPage()): ?>
+    <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">&lsaquo; older posts</a>
+    <?php endif ?>
+
+    <?php if($articles->pagination()->hasPrevPage()): ?>
+    <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">newer posts &rsaquo;</a>
+    <?php endif ?>
+
+  </nav>
+  <?php endif ?>
 
 </section>
 
