@@ -91,6 +91,12 @@ header a:hover {
 .blog article:last-child {
   border-bottom: none;
 }
+.blog article a.read-more {
+  color: #ff6666;
+}
+.blog article a.read-more:hover {
+  color: #777;
+}
 .blogarticle article {
   padding: 30px 0;
 }

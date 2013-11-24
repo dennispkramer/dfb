@@ -38,7 +38,7 @@ $results = $search->results();
   	    <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
   	    <?php echo $article->date('Y-m-d') ?>
       </div>
-      <p><?php echo excerpt($article->text(), 300) ?></p>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
     <?php elseif($article->template() == 'blogarticle.sweet'): ?> 
       <div class="post-icon post-icon-sweet"></div>
@@ -46,7 +46,7 @@ $results = $search->results();
         <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
         <?php echo $article->date('Y-m-d') ?>
       </div>
-      <p><?php echo excerpt($article->text(), 300) ?></p>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
     <?php elseif($article->template() == 'blogarticle.savory'): ?> 
       <div class="post-icon post-icon-savory"></div>
@@ -54,7 +54,7 @@ $results = $search->results();
         <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
         <?php echo $article->date('Y-m-d') ?>
       </div>
-      <p><?php echo excerpt($article->text(), 300) ?></p>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
       <?php endif ?> 
   </article>
