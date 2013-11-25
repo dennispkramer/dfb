@@ -17,6 +17,9 @@
   ?>
 
   <!-- search results -->
+  <?php if($results): ?>
+  <h2>Results for "<?php $variableName = $_GET['q'];
+    echo $variableName; ?>"</h2>
   <ul>
     <?php foreach($results as $result): ?>
     <li>
@@ -26,6 +29,11 @@
     </li>
     <?php endforeach ?>
   </ul>
+<?php elseif($results == 0): ?>
+  <h2>Sorry, no posts match your search for "<?php $variableName = $_GET['q'];
+    echo $variableName; ?>"</h2>
+
+  <?php endif ?>
 </section>
 
 <?php snippet('footer') ?>
