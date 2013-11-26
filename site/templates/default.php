@@ -2,10 +2,39 @@
 
 
 <section class="content blog">
-  
+  <!-- display tagcloud -->
+  <?php
+
+    $blog = $pages->find('home');
+    $tags = tagcloud($blog, array(
+    'limit'    => 20,
+    'sort'     => 'name',
+  ));
+
+  ?>
+
+  <ul class="tagcloud">
+    <?php foreach($tags as $tag): ?>
+    <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
+    <?php endforeach ?>
+  </ul>
 
   <!-- display blog posts -->
-  <?php $articles = $page->children()->visible()->flip()->paginate(10) ?>
+  <?php if(param('tag')) {
+
+    $articles = $page->children()
+                     ->visible()
+                     ->filterBy('tags', param('tag'), ',')
+                     ->flip()
+                     ->paginate(10);
+  } else {
+
+    $articles = $page->children()
+                     ->visible()
+                     ->flip()
+                     ->paginate(10);
+
+  } ?>
 
   <?php foreach($articles as $article): ?>
   

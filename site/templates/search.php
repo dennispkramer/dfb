@@ -17,9 +17,9 @@
   ?>
 
   <!-- search results -->
+  <?php $variableName = $_GET['q']; ?>
   <?php if($results): ?>
-  <h2>Results for "<?php $variableName = $_GET['q'];
-    echo $variableName; ?>"</h2>
+  <h2>Results for "<?php echo $variableName; ?>"</h2>
   <ul>
     <?php foreach($results as $result): ?>
     <li>
@@ -30,8 +30,7 @@
     <?php endforeach ?>
   </ul>
 <?php elseif($results == 0): ?>
-  <h2>Sorry, no posts match your search for "<?php $variableName = $_GET['q'];
-    echo $variableName; ?>"</h2>
+  <h2>Sorry, no posts match your search for "<?php echo $variableName; ?>"</h2>
 
   <?php endif ?>
 </section>
