@@ -2,6 +2,29 @@
 
 
 <section class="content blog">
+
+  <!-- display posts with a specific tag -->
+  <?php if(param('tag')):
+
+    $articles = $page->children()
+                     ->visible()
+                     ->filterBy('tags', param('tag'), ',')
+                     ->flip()
+                     ->paginate(10);
+  ?>
+
+  <h2>Posts tagged with "<?php echo param('tag'); ?>"</h2>
+
+  <!-- display all posts in blog -->
+  <?php else:
+
+    $articles = $page->children()
+                     ->visible()
+                     ->flip()
+                     ->paginate(10);
+
+  ?>
+
   <!-- display tagcloud -->
   <?php
 
@@ -15,26 +38,11 @@
 
   <ul class="tagcloud">
     <?php foreach($tags as $tag): ?>
-    <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
+      <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
     <?php endforeach ?>
   </ul>
 
-  <!-- display blog posts -->
-  <?php if(param('tag')) {
-
-    $articles = $page->children()
-                     ->visible()
-                     ->filterBy('tags', param('tag'), ',')
-                     ->flip()
-                     ->paginate(10);
-  } else {
-
-    $articles = $page->children()
-                     ->visible()
-                     ->flip()
-                     ->paginate(10);
-
-  } ?>
+  <? endif; ?>
 
   <?php foreach($articles as $article): ?>
   

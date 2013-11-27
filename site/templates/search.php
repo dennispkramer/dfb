@@ -19,7 +19,7 @@
   <!-- search results -->
   <?php $variableName = $_GET['q']; ?>
   <?php if($results): ?>
-  <h2>Results for "<?php echo $variableName; ?>"</h2>
+  <h2>Search results for "<?php echo $variableName; ?>"</h2>
   <ul>
     <?php foreach($results as $result): ?>
     <li>
