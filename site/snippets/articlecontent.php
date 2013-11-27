@@ -1,4 +1,10 @@
 <section class="content blogarticle">
+
+<ul class="tags">
+<?php foreach(str::split($page->tags()) as $tag): ?>
+<li><a href="<?php echo url('/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a></li>
+<?php endforeach ?>
+</ul>
 	<article>
 		<h2><?php echo html($page->title()) ?></h2>
 		<?php echo $page->date('Y-m-d') ?>
