@@ -17,47 +17,15 @@
   ?>
 
   <!-- search results -->
-  <?php $variableName = $_GET['q']; ?>
-  <?php if($articles): ?>
-  <h2>Search results for "<?php echo $variableName; ?>"</h2>
-  <?php foreach($articles as $article): ?>
-  
-  <article>
-    <!-- bread posts -->
-    <?php if($article->template() == 'blogarticle.bread'): ?> 
-      <div class="post-icon post-icon-bread"></div>
-      <div class="post-header">
-        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
-        <?php echo $article->date('Y-m-d') ?>
-      </div>
-      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
+  <?php $query = $_GET['q']; ?>
+    <?php if($articles): ?>
+      <h2>Search results for "<?php echo $query; ?>"</h2>
+      <!-- display article list -->
+      <?php snippet('articlelist', array('articles' => $articles)); ?>
+    <?php elseif($articles == 0): ?>
+     <h2>Sorry, no posts match your search for "<?php echo $query; ?>"</h2>
 
-    <!-- sweet posts -->
-    <?php elseif($article->template() == 'blogarticle.sweet'): ?> 
-      <div class="post-icon post-icon-sweet"></div>
-      <div class="post-header">
-        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
-        <?php echo $article->date('Y-m-d') ?>
-      </div>
-      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
-
-    <!-- savory posts -->
-    <?php elseif($article->template() == 'blogarticle.savory'): ?> 
-      <div class="post-icon post-icon-savory"></div>
-      <div class="post-header">
-        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
-        <?php echo $article->date('Y-m-d') ?>
-      </div>
-      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
-
-      <?php endif ?> 
-  </article>
-
-  <?php endforeach ?>
-<?php elseif($articles == 0): ?>
-  <h2>Sorry, no posts match your search for "<?php echo $variableName; ?>"</h2>
-
-  <?php endif ?>
+    <?php endif ?>
 </section>
 
 <?php snippet('footer') ?>

@@ -89,9 +89,25 @@ header{
   }
 }
 
+// TAGS //
+ul.tags{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    display: inline-block;
+    background: @white;
+    padding: 1px 13px;
+    margin: 0 2px 6px 0;
+
+    -webkit-border-radius: 200px;
+       -moz-border-radius: 200px;
+            border-radius: 200px;
+  }
+}
 
 
-// LIST RESULTS //
+// LIST RESULTS (for default browsing, tag results, and search results) //
 
 .content{
   article{
@@ -117,7 +133,8 @@ header{
       display: inline-block;
       margin-left: 30px;
     }
-    padding: 30px 0;
+    padding-bottom: 10px;
+    margin-bottom: 34px;
     border-bottom: 1px solid @light-grey;
     &:last-child{
       border-bottom: none;
