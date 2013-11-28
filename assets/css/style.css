@@ -15,6 +15,7 @@ body {
   padding: 0 20px;
   max-width: 740px;
   margin: 0 auto;
+  position: relative;
 }
 p {
   font-size: 22px;
@@ -49,6 +50,15 @@ a:visited {
 }
 a:hover {
   color: #ff6666;
+}
+input {
+  border: none;
+  outline: none;
+  transition: .25s;
+  -o-transition: .25s;
+  -ms-transition: .25s;
+  -moz-transition: .25s;
+  -webkit-transition: .25s;
 }
 img {
   outline: 0;
@@ -96,6 +106,38 @@ nav.menu ul li a:hover {
 }
 nav.menu ul li a.active {
   background: rgba(0,0,0,0.2);
+}
+nav.menu form.search {
+  position: absolute;
+  right: 0;
+  top: -6px;
+}
+nav.menu form.search input[type=text] {
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+  width: 100px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+nav.menu form.search input[type=text]:focus {
+  background: #ffffff;
+  width: 150px;
+}
+nav.menu form.search input[type=submit] {
+  display: none;
+}
+nav.menu form.search ::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+nav.menu form.search ::-moz-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+nav.menu form.search :-ms-input-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+nav.menu form.search input:-moz-placeholder {
+  color: rgba(255,255,255,0.4);
 }
 ul.tags {
   list-style: none;

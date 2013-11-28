@@ -15,8 +15,8 @@ if($items->count() > 0):
 			<?php endforeach ?>
 		</ul>
 		<!-- search form -->
-		<form action="<?php echo url('search') ?>" method="get">
-			<input type="text" placeholder="Search…" name="q" />
+		<form class="search" action="<?php echo url('search') ?>" method="get">
+			<input type="text" placeholder="Search" name="q" />
 			<input type="submit" value="Search" />
 		</form>
 	</div>
