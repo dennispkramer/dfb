@@ -56,6 +56,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 80px 0;
+  margin-bottom: 60px;
 }
 header a {
   color: #ffffff;
@@ -63,11 +64,11 @@ header a {
 header a:hover {
   color: rgba(0,0,0,0.2);
 }
-.blog article {
+.content article {
   padding: 30px 0;
   border-bottom: 1px solid #dddddd;
 }
-.blog article .post-icon {
+.content article .post-icon {
   padding: 30px;
   display: inline-block;
   float: left;
@@ -75,30 +76,27 @@ header a:hover {
   -moz-border-radius: 200px;
   border-radius: 200px;
 }
-.blog article .post-icon-bread {
+.content article .post-icon-bread {
   background: #fec449;
 }
-.blog article .post-icon-sweet {
+.content article .post-icon-sweet {
   background: #ff6666;
 }
-.blog article .post-icon-savory {
+.content article .post-icon-savory {
   background: #7747ac;
 }
-.blog article .post-header {
+.content article .post-header {
   display: inline-block;
   margin-left: 30px;
 }
-.blog article:last-child {
+.content article:last-child {
   border-bottom: none;
 }
-.blog article a.read-more {
+.content article a.read-more {
   color: #ff6666;
 }
-.blog article a.read-more:hover {
+.content article a.read-more:hover {
   color: #777;
-}
-.blogarticle article {
-  padding: 30px 0;
 }
 .blogarticle article img {
   border: 10px solid #ffffff;

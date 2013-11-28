@@ -12,24 +12,49 @@
     'score' => array('title' => 4, 'tags' => 2, 'text' => 1)
   ));
 
-  $results = $search->results();
+  $articles = $search->results();
 
   ?>
 
   <!-- search results -->
   <?php $variableName = $_GET['q']; ?>
-  <?php if($results): ?>
+  <?php if($articles): ?>
   <h2>Search results for "<?php echo $variableName; ?>"</h2>
-  <ul>
-    <?php foreach($results as $result): ?>
-    <li>
-      <h2><a href="<?php echo $result->url() ?>"><?php echo html($result->title()) ?></a></h2>
-      <?php echo $result->date('Y-m-d') ?>
-      <p><?php echo excerpt($result->text(), 300) ?><a href="<?php echo $result->url() ?>" class="read-more"> read more</a></p>
-    </li>
-    <?php endforeach ?>
-  </ul>
-<?php elseif($results == 0): ?>
+  <?php foreach($articles as $article): ?>
+  
+  <article>
+    <!-- bread posts -->
+    <?php if($article->template() == 'blogarticle.bread'): ?> 
+      <div class="post-icon post-icon-bread"></div>
+      <div class="post-header">
+        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
+        <?php echo $article->date('Y-m-d') ?>
+      </div>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
+
+    <!-- sweet posts -->
+    <?php elseif($article->template() == 'blogarticle.sweet'): ?> 
+      <div class="post-icon post-icon-sweet"></div>
+      <div class="post-header">
+        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
+        <?php echo $article->date('Y-m-d') ?>
+      </div>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
+
+    <!-- savory posts -->
+    <?php elseif($article->template() == 'blogarticle.savory'): ?> 
+      <div class="post-icon post-icon-savory"></div>
+      <div class="post-header">
+        <a href="<?php echo $article->url() ?>"><h2><?php echo html($article->title()) ?></h2></a>
+        <?php echo $article->date('Y-m-d') ?>
+      </div>
+      <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
+
+      <?php endif ?> 
+  </article>
+
+  <?php endforeach ?>
+<?php elseif($articles == 0): ?>
   <h2>Sorry, no posts match your search for "<?php echo $variableName; ?>"</h2>
 
   <?php endif ?>
