@@ -1,6 +1,6 @@
 <section class="content blogarticle">
 	<article>
-		<h2><?php echo html($page->title()) ?></h2>
+		<h3><?php echo html($page->title()) ?></h3>
 		<?php echo $page->date('Y-m-d') ?>
 		<?php echo kirbytext($page->text()) ?>
 	</article>

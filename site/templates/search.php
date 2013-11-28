@@ -23,7 +23,22 @@
       <!-- display article list -->
       <?php snippet('articlelist', array('articles' => $articles)); ?>
     <?php elseif($articles == 0): ?>
-     <h2>Sorry, no posts match your search for "<?php echo $query; ?>"</h2>
+      <h2>Sorry, no posts match your search for "<?php echo $query; ?>"</h2>
+      <!-- display tagcloud -->
+      <?php
+
+        $blog = $pages->find('home');
+        $tags = tagcloud($blog, array(
+        'limit'    => 20,
+        'sort'     => 'name',
+      ));
+
+      ?>
+      <ul class="tags tagcloud">
+        <?php foreach($tags as $tag): ?>
+          <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
+        <?php endforeach ?>
+      </ul>
 
     <?php endif ?>
 </section>

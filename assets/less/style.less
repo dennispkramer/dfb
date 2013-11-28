@@ -22,19 +22,19 @@ html {
 body {
   background: @background;
   font-family: 'FreightSans', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: @grey;
   margin: 0;
 }
 .content{
 	padding: 0 20px;
-	max-width: 640px;
+	max-width: 740px;
 	margin: 0 auto;
 }
 p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 34px;
 }
 h1 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
@@ -42,6 +42,11 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 50px;
+}
+h3{
+  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-size: 36px;
+  line-height: 38px
 }
 a {
   color: @grey;
@@ -79,8 +84,11 @@ header{
   background: @purple;
   width: 100%;
   text-align: center;
-  padding: 80px 0;
+  padding-top:80px;
   margin-bottom: 60px;
+  h1{
+    margin-bottom: 80px;
+  }
   a{
     color: @white;
     &:hover{
@@ -89,13 +97,43 @@ header{
   }
 }
 
+// NAVIGATION //
+
+nav.menu{
+  padding: 18px 0;
+  background: rgba(0,0,0,.06);
+  overflow: hidden;
+  ul{
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      margin-right: -3px;
+      a{
+        padding: 40px 24px;
+        &:hover{
+          background: rgba(0,0,0,.1);
+          color: @white;
+        }
+        &.active{
+          background: rgba(0,0,0,.2);
+        }
+      }
+    }
+  }
+}
+
 // TAGS //
+
 ul.tags{
   list-style: none;
   padding: 0;
   margin: 0;
   li{
     display: inline-block;
+    font-size: 16px;
     background: @white;
     padding: 1px 13px;
     margin: 0 2px 6px 0;
@@ -112,7 +150,7 @@ ul.tags{
 .content{
   article{
     .post-icon{
-      padding: 30px;
+      padding: 26px;
       display: inline-block;
       float: left;
       
@@ -140,6 +178,9 @@ ul.tags{
       border-bottom: none;
     }
     a.read-more{
+      font-family: 'Calendas Plus', Georgia, Times, serif;
+      font-size: 22px;
+      font-style: italic;
       color: @red;
       &:hover{
         color: @grey;
