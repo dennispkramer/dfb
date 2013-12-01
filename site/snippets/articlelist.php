@@ -6,7 +6,7 @@
   	<div class="post-title">
   	    <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('Y-m-d') ?>
+    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
   <!-- sweet posts -->
@@ -15,7 +15,7 @@
     <div class="post-title">
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('Y-m-d') ?>
+    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
   <!-- savory posts -->
@@ -24,7 +24,7 @@
     <div class="post-title">
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('Y-m-d') ?>
+    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
     <?php endif ?> 

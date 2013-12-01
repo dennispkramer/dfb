@@ -6,7 +6,7 @@
 			<div class="post-title">
 			    <h3><?php echo html($page->title()) ?></h3>
 			</div>
-		<?php echo $page->date('Y-m-d') ?>
+		<?php echo $page->date('m-d-y') ?>
 		<?php echo kirbytext($page->text()) ?>
 
 		<!-- sweet posts -->
@@ -15,7 +15,7 @@
 			<div class="post-title">
 			    <h3><?php echo html($page->title()) ?></h3>
 			</div>
-		<?php echo $page->date('Y-m-d') ?>
+		<?php echo $page->date('m-d-y') ?>
 		<?php echo kirbytext($page->text()) ?>
 
 		<!-- savory posts -->
@@ -24,7 +24,7 @@
 			<div class="post-title">
 			    <h3><?php echo html($page->title()) ?></h3>
 			</div>
-		<?php echo $page->date('Y-m-d') ?>
+		<?php echo $page->date('m-d-y') ?>
 		<?php echo kirbytext($page->text()) ?>
 
 		<?php endif ?> 

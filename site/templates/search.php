@@ -9,7 +9,9 @@
   $search = new search(array(
     'searchfield' => 'q',
     'words' => true,
-    'score' => array('title' => 4, 'tags' => 2, 'text' => 1)
+    'score' => array('title' => 4, 'tags' => 2, 'text' => 1),
+    'ignore' => array('error', 'about', 'contact'),
+    'paginate' => 10
   ));
 
   $articles = $search->results();
@@ -24,6 +26,7 @@
       <?php snippet('articlelist', array('articles' => $articles)); ?>
     <?php elseif($articles == 0): ?>
       <h2>Sorry, no posts match your search for "<?php echo $query; ?>"</h2>
+      <p>Feel free to search again or use the tags below:</p>
       <!-- display tagcloud -->
       <?php
 
