@@ -142,7 +142,7 @@ nav.menu{
     input[type=text]{
       padding: 10px;
       background: rgba(0,0,0,.2);
-      width: 100px;
+      width: 130px;
 
       -webkit-border-radius: 200px;
          -moz-border-radius: 200px;
@@ -152,7 +152,7 @@ nav.menu{
 
       &:focus{
         background: @white;
-        width: 150px;
+        width: 180px;
       }
     }
     input[type=submit]{
@@ -169,8 +169,8 @@ nav.menu{
 
 ul.tags{
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-left: 0;
   li{
     display: inline-block;
     font-size: 16px;
@@ -184,8 +184,16 @@ ul.tags{
   }
 }
 
+.tagcloud{
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid @light-grey;
 
-// LIST RESULTS (for default browsing, tag results, and search results) //
+}
+
+
+// LIST RESULTS AND ARTICLES (for default browsing, tag results, and search results) //
 
 .content{
   article{
@@ -207,9 +215,12 @@ ul.tags{
     .post-icon-savory{
       background: @purple;
     }
-    .post-header{
+    .post-title{
       display: inline-block;
-      margin-left: 30px;
+      margin-left: 15px;
+      h3{
+        margin: 12px 10px 0 0;
+      }
     }
     padding-bottom: 10px;
     margin-bottom: 34px;
@@ -230,7 +241,7 @@ ul.tags{
 }
 
 
-// ARTICLE PAGE //
+// ARTICLE SPECIFIC //
 
 .blogarticle{
   article{

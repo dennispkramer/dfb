@@ -44,7 +44,7 @@ function tagcloud($parent, $options=array()) {
       } else {
         $cloud[$t] = new obj(array(
           'results'  => 1,
-          'name'     => $t,
+          'name'     => urldecode($t),
           'url'      => $options['baseurl'] . '/' . $options['param'] . $ds . $t, 
           'isActive' => (param($options['param']) == $t) ? true : false,
         ));

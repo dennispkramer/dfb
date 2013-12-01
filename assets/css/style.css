@@ -115,14 +115,14 @@ nav.menu form.search {
 nav.menu form.search input[type=text] {
   padding: 10px;
   background: rgba(0,0,0,0.2);
-  width: 100px;
+  width: 130px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
 }
 nav.menu form.search input[type=text]:focus {
   background: #ffffff;
-  width: 150px;
+  width: 180px;
 }
 nav.menu form.search input[type=submit] {
   display: none;
@@ -141,8 +141,8 @@ nav.menu form.search input:-moz-placeholder {
 }
 ul.tags {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 ul.tags li {
   display: inline-block;
@@ -153,6 +153,12 @@ ul.tags li {
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
+}
+.tagcloud {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dddddd;
 }
 .content article {
   padding-bottom: 10px;
@@ -176,9 +182,12 @@ ul.tags li {
 .content article .post-icon-savory {
   background: #7747ac;
 }
-.content article .post-header {
+.content article .post-title {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 15px;
+}
+.content article .post-title h3 {
+  margin: 12px 10px 0 0;
 }
 .content article:last-child {
   border-bottom: none;
