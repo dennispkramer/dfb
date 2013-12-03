@@ -70,11 +70,10 @@ header {
   background: #7747ac;
   width: 100%;
   text-align: center;
-  padding-top: 80px;
   margin-bottom: 60px;
 }
 header h1 {
-  margin-bottom: 80px;
+  padding: 80px 0 90px;
 }
 header a {
   color: #ffffff;
