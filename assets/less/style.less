@@ -8,9 +8,25 @@
 @grey: #777;
 @light-grey: #dddddd;
 
+@sans-serif: 'FreightSans', Helvetica, Arial, sans-serif;
+@serif: 'Calendas Plus', Georgia, Times, serif;
+
 // MIXINS //
 
+.rounded-corners (@radius: 4px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
 
+.transition (@transition: .25s) {
+  -webkit-transition: @transition;  
+  -moz-transition:    @transition;
+  -ms-transition:     @transition; 
+  -o-transition:      @transition;  
+}
 
 // GENERAL STYLES //
 
@@ -21,7 +37,7 @@ html {
 }
 body {
   background: @background;
-  font-family: 'FreightSans', Helvetica, Arial, sans-serif;
+  font-family: @sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: @grey;
@@ -38,14 +54,14 @@ p {
   line-height: 34px;
 }
 h1 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-family: @serif;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 50px;
 }
 h3{
-  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-family: @serif;
   font-size: 36px;
   line-height: 38px
 }
@@ -53,11 +69,7 @@ a {
   color: @grey;
   text-decoration: none;
 
-         transition:.25s;
-      -o-transition:.25s;
-     -ms-transition:.25s;
-    -moz-transition:.25s;
- -webkit-transition:.25s;
+  .transition;
 
 }
 a,
@@ -73,11 +85,7 @@ input {
   border: none;
   outline: none;
 
-         transition:.25s;
-      -o-transition:.25s;
-     -ms-transition:.25s;
-    -moz-transition:.25s;
- -webkit-transition:.25s;
+  .transition;
 
 }
 img {
@@ -128,11 +136,10 @@ nav.menu{
       margin-right: 10px;
       a{
         font-weight: 500;
-        padding: 10px 30px;
+        padding: 8px 26px;
 
-      -webkit-border-radius: 200px;
-         -moz-border-radius: 200px;
-              border-radius: 200px;
+        .rounded-corners(200px);
+
         &:hover{
           background: rgba(0,0,0,.2);
           color: @white;
@@ -153,11 +160,7 @@ nav.menu{
       background: rgba(0,0,0,.4);
       width: 130px;
 
-      -webkit-border-radius: 200px;
-         -moz-border-radius: 200px;
-              border-radius: 200px;
-
-
+      .rounded-corners(200px);
 
       &:focus{
         background: @white;
@@ -187,9 +190,7 @@ ul.tags{
     padding: 1px 13px;
     margin: 0 2px 6px 0;
 
-    -webkit-border-radius: 200px;
-       -moz-border-radius: 200px;
-            border-radius: 200px;
+    .rounded-corners(200px);
   }
 }
 
@@ -211,9 +212,7 @@ ul.tags{
       display: inline-block;
       float: left;
       
-      -webkit-border-radius: 200px;
-         -moz-border-radius: 200px;
-              border-radius: 200px;
+      .rounded-corners(200px);
     }
     .post-icon-bread{
       background: @yellow;
@@ -238,7 +237,7 @@ ul.tags{
       border-bottom: none;
     }
     a.read-more{
-      font-family: 'Calendas Plus', Georgia, Times, serif;
+      font-family: @serif;
       font-size: 22px;
       font-style: italic;
       color: @red;

@@ -36,11 +36,10 @@ h3 {
 a {
   color: #777;
   text-decoration: none;
-  transition: .25s;
-  -o-transition: .25s;
-  -ms-transition: .25s;
-  -moz-transition: .25s;
   -webkit-transition: .25s;
+  -moz-transition: .25s;
+  -ms-transition: .25s;
+  -o-transition: .25s;
 }
 a,
 a:hover,
@@ -54,11 +53,10 @@ a:hover {
 input {
   border: none;
   outline: none;
-  transition: .25s;
-  -o-transition: .25s;
-  -ms-transition: .25s;
-  -moz-transition: .25s;
   -webkit-transition: .25s;
+  -moz-transition: .25s;
+  -ms-transition: .25s;
+  -o-transition: .25s;
 }
 img {
   outline: 0;
@@ -102,9 +100,11 @@ nav.menu ul li {
 }
 nav.menu ul li a {
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 8px 26px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
   border-radius: 200px;
 }
 nav.menu ul li a:hover {
@@ -126,6 +126,8 @@ nav.menu form.search input[type=text] {
   width: 130px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
   border-radius: 200px;
 }
 nav.menu form.search input[type=text]:focus {
@@ -160,6 +162,8 @@ ul.tags li {
   margin: 0 2px 6px 0;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
   border-radius: 200px;
 }
 .tagcloud {
@@ -179,6 +183,8 @@ ul.tags li {
   float: left;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
   border-radius: 200px;
 }
 .content article .post-icon-bread {
