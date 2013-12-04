@@ -15,6 +15,8 @@ body {
   background: #f0f0f0;
   z-index: 0;
   margin-bottom: -81px;
+  -webkit-box-shadow: 0px -80px 100px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px -80px 100px 0px rgba(0,0,0,0.5);
 }
 .false-background .content {
   margin-top: 370px;
@@ -74,7 +76,7 @@ img {
   -moz-box-sizing: border-box;
 }
 .header-image {
-  background-image: url(dfb/assets/images/01.jpg);
+  background-image: url(/assets/images/01.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
