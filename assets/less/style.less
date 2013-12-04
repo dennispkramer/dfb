@@ -93,17 +93,21 @@ img {
 // HEADER //
 
 header{
-  background: @purple;
+  background-image: url(/assets/images/01.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   text-align: center;
   margin-bottom: 60px;
   h1{
-    padding: 80px 0 90px;
+    padding: 110px 0 120px;
   }
   a{
     color: @white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.3);
     &:hover{
-    	color: rgba(0,0,0,.2);
+    	color: rgba(0,0,0,.3);
+      text-shadow: none;
     }
   }
 }
@@ -112,7 +116,7 @@ header{
 
 nav.menu{
   padding: 18px 0;
-  background: rgba(0,0,0,.06);
+  background: rgba(0,0,0,.2);
   overflow: hidden;
   ul{
     float: left;
@@ -121,15 +125,21 @@ nav.menu{
     margin: 0;
     li{
       display: inline-block;
-      margin-right: -3px;
+      margin-right: 10px;
       a{
-        padding: 40px 24px;
+        font-weight: 500;
+        padding: 10px 30px;
+
+      -webkit-border-radius: 200px;
+         -moz-border-radius: 200px;
+              border-radius: 200px;
         &:hover{
-          background: rgba(0,0,0,.1);
+          background: rgba(0,0,0,.2);
           color: @white;
         }
         &.active{
-          background: rgba(0,0,0,.2);
+          background: transparent;
+          border: 1px solid @white;
         }
       }
     }
@@ -140,7 +150,7 @@ nav.menu{
     top: -6px;
     input[type=text]{
       padding: 10px;
-      background: rgba(0,0,0,.2);
+      background: rgba(0,0,0,.4);
       width: 130px;
 
       -webkit-border-radius: 200px;
@@ -157,10 +167,10 @@ nav.menu{
     input[type=submit]{
       display: none;
     }
-    ::-webkit-input-placeholder { color:rgba(255,255,255,.4) }
-    ::-moz-placeholder { color:rgba(255,255,255,.4) } /* firefox 19+ */
-    :-ms-input-placeholder { color:rgba(255,255,255,.4) } /* ie */
-    input:-moz-placeholder { color:rgba(255,255,255,.4) }
+    ::-webkit-input-placeholder { color:rgba(255,255,255,.6) }
+    ::-moz-placeholder { color:rgba(255,255,255,.6) } /* firefox 19+ */
+    :-ms-input-placeholder { color:rgba(255,255,255,.6) } /* ie */
+    input:-moz-placeholder { color:rgba(255,255,255,.6) }
   }
 }
 
