@@ -21,7 +21,7 @@ http://getkirby.com/license
 
 */
 
-c::set('license', 'your license key');
+c::set('license', '51ac963db2eca789639b768144ba5aab');
 
 
 /* 
@@ -89,7 +89,7 @@ http://yourdomain.com/index.php/about
 
 */
 
-c::set('rewrite', true);
+c::set('rewrite', false);
 
 
 /* 
