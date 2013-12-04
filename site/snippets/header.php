@@ -15,5 +15,4 @@
 
   <header>
     <?php snippet('menu') ?>
-    <h1><a href="<?php echo url() ?>">Dinner For Breakfast</a></h1>
   </header>
