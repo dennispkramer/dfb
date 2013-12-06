@@ -9,6 +9,9 @@
 
   <?php snippet('less') ?>
 
+  <?php echo js('assets/js/jquery-1.10.2.min.js') ?>
+  <?php echo js('assets/js/control.js') ?>
+
 </head>
 
 <body>
