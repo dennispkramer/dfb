@@ -1,7 +1,9 @@
 <?php snippet('header') ?>
 
 <div class="header-image"></div>
-<h1 class="page-title">Dinner For Breakfast</h1>
+<div class="default-header">
+  <img class="page-title" src="/assets/images/logo.png"></img>
+</div>
 <div class="false-background">
   <section class="content blog">
 
