@@ -1,8 +1,7 @@
 <?php snippet('header') ?>
 
-<div class="header-image">
-	<h1><?php echo html($page->title()) ?></h1>
-</div>
+<div class="header-image"></div>
+<h1 class="page-title"><?php echo html($page->title()) ?></h1>
 
 <div class="false-background">
 	<section class="content">

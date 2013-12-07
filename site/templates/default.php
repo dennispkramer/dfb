@@ -1,9 +1,7 @@
 <?php snippet('header') ?>
 
-<div class="header-image">
-  <h1>Dinner For Breakfast</h1>
-</div>
-
+<div class="header-image"></div>
+<h1 class="page-title">Dinner For Breakfast</h1>
 <div class="false-background">
   <section class="content blog">
 

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<div class="header-image">
+<div class="header-image"></div>
     <!-- search plugin -->
     <?php
 
@@ -17,11 +17,10 @@
     ?>
     <?php $query = $_GET['q']; ?>
       <?php if($articles): ?>
-        <h1>Search results for "<?php echo $query; ?>"</h1>
+        <h1 class="page-title">Search results for "<?php echo $query; ?>"</h1>
       <?php elseif($articles == 0): ?>
-        <h1>Sorry, no posts match your search for "<?php echo $query; ?>"</h1>
+        <h1 class="page-title">Sorry, no posts match your search for "<?php echo $query; ?>"</h1>
     <?php endif ?>
-</div>
 
 <div class="false-background">
   <section class="content">

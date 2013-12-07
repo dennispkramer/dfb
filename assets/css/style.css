@@ -19,7 +19,6 @@ body {
   box-shadow: 0px -80px 100px 0px rgba(0,0,0,0.5);
 }
 .false-background .content {
-  margin-top: 370px;
   padding-top: 40px;
 }
 .content {
@@ -80,24 +79,23 @@ img {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: inherit;
-  text-align: center;
+  height: 100%;
   z-index: -2;
   position: fixed;
   top: 0;
+  -webkit-box-shadow: inset 0px 80px 100px 0px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 80px 100px 0px rgba(0,0,0,0.5);
 }
-.header-image h1 {
+h1.page-title {
+  text-align: center;
   max-width: 740px;
-  margin: 200px auto;
+  margin: 140px auto;
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 nav.menu {
-  position: fixed;
-  top: 0;
   width: 100%;
   padding: 18px 0;
-  background: rgba(0,0,0,0.2);
   overflow: hidden;
   z-index: 1;
 }
@@ -122,7 +120,7 @@ nav.menu ul li a {
   border-radius: 200px;
 }
 nav.menu ul li a:hover {
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.2);
 }
 nav.menu ul li a.active {
   border: 1px solid #ffffff;
@@ -134,7 +132,7 @@ nav.menu form.search {
 }
 nav.menu form.search input[type=text] {
   padding: 10px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.15);
   width: 130px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -150,16 +148,16 @@ nav.menu form.search input[type=submit] {
   display: none;
 }
 nav.menu form.search ::-webkit-input-placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.4);
 }
 nav.menu form.search ::-moz-placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.4);
 }
 nav.menu form.search :-ms-input-placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.4);
 }
 nav.menu form.search input:-moz-placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.4);
 }
 ul.tags {
   list-style: none;
