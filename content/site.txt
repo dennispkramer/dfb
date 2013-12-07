@@ -2,8 +2,8 @@ Title: Dinner For Breakfast
 ----
 Author: Lily Engle
 ----
-Description: Kirby is awesome
+Description: Lily Engle lives in Brooklyn and enjoys cooking, biking, and generally being crafty.
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
+Keywords: food, cooking, baking, dessert, dinner, breakfast, meals, bread, yeast
 ----
 Copyright: © 2009-(date: Year) Lily Engle
