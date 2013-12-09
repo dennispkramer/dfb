@@ -199,19 +199,24 @@ ul.tags li {
   margin-bottom: 34px;
   border-bottom: 1px solid #dddddd;
 }
-.content article ul.image-preview {
-  padding: 2%;
+.content article .image-preview {
+  margin: 16px 0 -10px;
+  padding: 1%;
   background: #ffffff;
 }
-.content article ul.image-preview li {
-  width: 32%;
-  height: 160px;
+.content article .image-preview span {
+  width: 32.66667%;
+  max-height: 160px;
   display: inline-block;
   overflow: hidden;
-  vertical-align: bottom;
+  vertical-align: top;
   margin-right: 1%;
+  margin-left: -3px;
 }
-.content article ul.image-preview li:last-child {
+.content article .image-preview span:first-child {
+  margin-left: 0;
+}
+.content article .image-preview span:last-child {
   margin-right: 0;
 }
 .content article .post-icon {

@@ -8,15 +8,15 @@
     </div>
     <?php echo $article->date('m-d-y') ?>
     <a href="<?php echo $article->url() ?>">
-      <ul class="image-preview">  
+      <div class="image-preview">  
         <?php
           $i = 0;
           foreach($article->images() as $image):
             if ($i == 3) { break; }
         ?>
-          <li><img src="<?php echo $image->url() ?>" /></li>
+          <span><img src="<?php echo $image->url() ?>" /></span>
         <? $i++; endforeach ?>
-      </ul>
+      </div>
     </a>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
@@ -28,17 +28,16 @@
     </div>
     <?php echo $article->date('m-d-y') ?>
     <a href="<?php echo $article->url() ?>">
-      <ul class="image-preview">  
+      <div class="image-preview">  
         <?php
           $i = 0;
           foreach($article->images() as $image):
             if ($i == 3) { break; }
         ?>
-          <li><img src="<?php echo $image->url() ?>" /></li>
+          <span><img src="<?php echo $image->url() ?>" /></span>
         <? $i++; endforeach ?>
-      </ul>
+      </div>
     </a>
-    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
   <!-- savory posts -->
@@ -49,17 +48,16 @@
     </div>
     <?php echo $article->date('m-d-y') ?>
     <a href="<?php echo $article->url() ?>">
-      <ul class="image-preview">  
+      <div class="image-preview">  
         <?php
           $i = 0;
           foreach($article->images() as $image):
             if ($i == 3) { break; }
         ?>
-          <li><img src="<?php echo $image->url() ?>" /></li>
+          <span><img src="<?php echo $image->url() ?>" /></span>
         <? $i++; endforeach ?>
-      </ul>
+      </div>
     </a>
-    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
     <?php endif ?> 
