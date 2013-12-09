@@ -1,7 +1,7 @@
 <?php if($page->hasImages()): ?>
 	<div class="image-wrap"><img class="header-image" src="<?php echo $page->images()->first()->url(); ?>" /></div>
+	<h1 class="page-title"><?php echo html($page->title()) ?></h1>
 <?php endif ?>
-<h1 class="page-title"><?php echo html($page->title()) ?></h1>
 
 <div class="false-background">
 	<section class="content blogarticle">

@@ -42,6 +42,11 @@ h3 {
   font-size: 36px;
   line-height: 38px;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 a {
   color: #777;
   text-decoration: none;
@@ -81,7 +86,6 @@ img {
   top: 0;
 }
 .image-wrap .header-image {
-  background-image: url(/assets/images/01.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -115,7 +119,6 @@ nav.menu {
 }
 nav.menu ul {
   float: left;
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -173,11 +176,6 @@ nav.menu form.search :-ms-input-placeholder {
 nav.menu form.search input:-moz-placeholder {
   color: rgba(255,255,255,0.4);
 }
-ul.tags {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
 ul.tags li {
   display: inline-block;
   font-size: 16px;
@@ -200,6 +198,21 @@ ul.tags li {
   padding-bottom: 10px;
   margin-bottom: 34px;
   border-bottom: 1px solid #dddddd;
+}
+.content article ul.image-preview {
+  padding: 2%;
+  background: #ffffff;
+}
+.content article ul.image-preview li {
+  width: 32%;
+  height: 160px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  margin-right: 1%;
+}
+.content article ul.image-preview li:last-child {
+  margin-right: 0;
 }
 .content article .post-icon {
   padding: 26px;

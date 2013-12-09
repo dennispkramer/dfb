@@ -75,6 +75,12 @@ h3{
   font-size: 36px;
   line-height: 38px
 }
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 a {
   color: @grey;
   text-decoration: none;
@@ -116,8 +122,6 @@ img {
   position: fixed; 
   top: 0;
   .header-image{
-    background-image: url(/assets/images/01.jpg);
-    // background-image: url(/images/general/01.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -135,15 +139,15 @@ h1.page-title{
   text-shadow: 1px 1px 4px rgba(0,0,0,.3);
 }
 .default-header{
-  height: 300px;
-  img.page-title{
-    width: 300px;
-    height: 155px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    top:115px;
-  }
+    height: 300px;
+    img.page-title{
+      width: 300px;
+      height: 155px;
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      top:115px;
+    }
 }
 
 // NAVIGATION //
@@ -155,7 +159,6 @@ nav.menu{
   z-index: 1;
   ul{
     float: left;
-    list-style: none;
     padding: 0;
     margin: 0;
     li{
@@ -206,9 +209,6 @@ nav.menu{
 // TAGS //
 
 ul.tags{
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
   li{
     display: inline-block;
     font-size: 16px;
@@ -233,6 +233,21 @@ ul.tags{
 
 .content{
   article{
+    ul.image-preview{
+      padding: 2%;
+      background: @white;
+      li{
+        width: 32%;
+        height: 160px;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: bottom;
+        margin-right: 1%;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
     .post-icon{
       padding: 26px;
       display: inline-block;

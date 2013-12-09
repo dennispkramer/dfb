@@ -7,6 +7,17 @@
   	    <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
     <?php echo $article->date('m-d-y') ?>
+    <a href="<?php echo $article->url() ?>">
+      <ul class="image-preview">  
+        <?php
+          $i = 0;
+          foreach($article->images() as $image):
+            if ($i == 3) { break; }
+        ?>
+          <li><img src="<?php echo $image->url() ?>" /></li>
+        <? $i++; endforeach ?>
+      </ul>
+    </a>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
   <!-- sweet posts -->
@@ -16,6 +27,18 @@
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
     <?php echo $article->date('m-d-y') ?>
+    <a href="<?php echo $article->url() ?>">
+      <ul class="image-preview">  
+        <?php
+          $i = 0;
+          foreach($article->images() as $image):
+            if ($i == 3) { break; }
+        ?>
+          <li><img src="<?php echo $image->url() ?>" /></li>
+        <? $i++; endforeach ?>
+      </ul>
+    </a>
+    <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
   <!-- savory posts -->
@@ -24,6 +47,18 @@
     <div class="post-title">
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
+    <?php echo $article->date('m-d-y') ?>
+    <a href="<?php echo $article->url() ?>">
+      <ul class="image-preview">  
+        <?php
+          $i = 0;
+          foreach($article->images() as $image):
+            if ($i == 3) { break; }
+        ?>
+          <li><img src="<?php echo $image->url() ?>" /></li>
+        <? $i++; endforeach ?>
+      </ul>
+    </a>
     <?php echo $article->date('m-d-y') ?>
     <p><?php echo excerpt($article->text(), 300) ?><a href="<?php echo $article->url() ?>" class="read-more"> read more</a></p>
 
