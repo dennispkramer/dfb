@@ -6,7 +6,7 @@
   	<div class="post-title">
   	    <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('m-d-y') ?>
+    <span class="post-date">Written on <?php echo $article->date('m-d-y') ?></span>
     <a href="<?php echo $article->url() ?>">
       <div class="image-preview">  
         <?php
@@ -26,7 +26,7 @@
     <div class="post-title">
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('m-d-y') ?>
+    <span class="post-date">Written on <?php echo $article->date('m-d-y') ?></span>
     <a href="<?php echo $article->url() ?>">
       <div class="image-preview">  
         <?php
@@ -46,7 +46,7 @@
     <div class="post-title">
         <a href="<?php echo $article->url() ?>"><h3><?php echo html($article->title()) ?></h3></a>
     </div>
-    <?php echo $article->date('m-d-y') ?>
+    <span class="post-date">Written on <?php echo $article->date('m-d-y') ?></span>
     <a href="<?php echo $article->url() ?>">
       <div class="image-preview">  
         <?php

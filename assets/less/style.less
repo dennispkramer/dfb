@@ -6,6 +6,7 @@
 @red: #ff6666;
 @yellow: #fec449;
 @grey: #777;
+@medium-grey: #b0b0b0;
 @light-grey: #dddddd;
 
 @sans-serif: 'Freightsans', Helvetica, Arial, sans-serif;
@@ -66,15 +67,17 @@ p {
 }
 h1 {
   font-family: @serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
   line-height: 50px;
 }
 h3{
   font-family: @serif;
   font-size: 36px;
-  line-height: 38px
+  font-style: italic;
+  font-weight: 100;
+  line-height: 38px;
 }
 
 ul{
@@ -151,7 +154,7 @@ img {
 h1.page-title{
   text-align: center;
   max-width: 740px;
-  margin: 140px auto;
+  margin: 80px auto 60px;
   color: @white;
   text-shadow: 1px 1px 4px rgba(0,0,0,.3);
 }
@@ -247,6 +250,41 @@ ul.tags{
 
 
 // LIST RESULTS AND ARTICLES (for default browsing, tag results, and search results) //
+.post-icon{
+  padding: 26px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  
+  .rounded-corners(200px);
+  &.post-icon-detail{
+    float: none;
+    margin: 0 auto 10px;
+
+    -webkit-box-shadow: 0 0 0 6px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 0 6px rgba(0,0,0,.4);
+    box-shadow: 0 0 0 6px rgba(0,0,0,.4);
+  }
+}
+.post-icon-bread{
+  background: @yellow;
+}
+.post-icon-sweet{
+  background: @red;
+}
+.post-icon-savory{
+  background: @purple;
+}
+.post-date{
+  color: @medium-grey;
+  font-size: 16px;
+  &.post-date-detail{
+    font-weight: 500;
+    text-align: center;
+    color: @white;
+    margin-bottom: 30px;
+  }
+}
 
 .content{
   article{
@@ -269,22 +307,6 @@ ul.tags{
           margin-right: 0;
         }
       }
-    }
-    .post-icon{
-      padding: 26px;
-      display: inline-block;
-      float: left;
-      
-      .rounded-corners(200px);
-    }
-    .post-icon-bread{
-      background: @yellow;
-    }
-    .post-icon-sweet{
-      background: @red;
-    }
-    .post-icon-savory{
-      background: @purple;
     }
     .post-title{
       display: inline-block;

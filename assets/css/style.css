@@ -33,14 +33,16 @@ p {
 }
 h1 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
   line-height: 50px;
 }
 h3 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
   line-height: 38px;
 }
 ul {
@@ -113,7 +115,7 @@ img {
 h1.page-title {
   text-align: center;
   max-width: 740px;
-  margin: 140px auto;
+  margin: 80px auto 60px;
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
@@ -211,6 +213,43 @@ ul.tags li {
   margin-bottom: 50px;
   border-bottom: 1px solid #dddddd;
 }
+.post-icon {
+  padding: 26px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+}
+.post-icon.post-icon-detail {
+  float: none;
+  margin: 0 auto 10px;
+  -webkit-box-shadow: 0 0 0 6px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 0 6px rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 6px rgba(0,0,0,0.4);
+}
+.post-icon-bread {
+  background: #fec449;
+}
+.post-icon-sweet {
+  background: #ff6666;
+}
+.post-icon-savory {
+  background: #7747ac;
+}
+.post-date {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+.post-date.post-date-detail {
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
 .content article {
   padding-bottom: 10px;
   margin-bottom: 34px;
@@ -235,25 +274,6 @@ ul.tags li {
 }
 .content article .image-preview span:last-child {
   margin-right: 0;
-}
-.content article .post-icon {
-  padding: 26px;
-  display: inline-block;
-  float: left;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px;
-  border-radius: 200px;
-}
-.content article .post-icon-bread {
-  background: #fec449;
-}
-.content article .post-icon-sweet {
-  background: #ff6666;
-}
-.content article .post-icon-savory {
-  background: #7747ac;
 }
 .content article .post-title {
   display: inline-block;
