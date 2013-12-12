@@ -28,21 +28,20 @@ body {
   position: relative;
 }
 p {
-  font-size: 22px;
+  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-size: 20px;
   line-height: 34px;
 }
 h1 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-family: 'Freightsans', Helvetica, Arial, sans-serif;
   font-size: 50px;
-  font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 50px;
 }
 h3 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-family: 'Freightsans', Helvetica, Arial, sans-serif;
   font-size: 36px;
-  font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 38px;
 }
 ul {
