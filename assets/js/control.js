@@ -5,7 +5,7 @@ $(window).scroll(function(){
 	// $('.header-image').css('-webkit-filter', 'blur('+ blur + 'px)');
 });
 
-
+// KILLS BLUR AFTER 400 px
 $(window).scroll(function(){
     if ($(this).scrollTop() > 400) {
         $('.header-image').css('-webkit-filter', 'blur(0)');
@@ -13,3 +13,11 @@ $(window).scroll(function(){
     else {
     }
 });
+
+// HEADROOM.JS FOR SCROLLED NAVBAR
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
