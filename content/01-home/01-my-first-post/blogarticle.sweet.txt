@@ -9,9 +9,9 @@ Text:
 In my heaven it’ll be pumpkin season all year.  This weekend I rang in pumpkin season with a bang: pumpkin beer on Friday and TWO pumpkin dishes yesterday.   I woke up craving coffeecake and realized that I had a ton of cake flour leftover from Dennis’ birthday cake, so it made perfect sense to get baking ASAP.  I was also excited to use the oven with our brand-new knobs that Andy so skillfully grabbed off of a stove that was being removed from another apartment.  Look at this beauty:
 
 (image: 01.jpg)
-###This weekend I rang in pumpkin season with a bang: pumpkin beer on Friday and TWO pumpkin dishes yesterday.   I woke up craving coffeecake and realized that I had a ton of cake flour.
+####This weekend I rang in pumpkin season with a bang: pumpkin beer on Friday and TWO pumpkin dishes yesterday.   I woke up craving coffeecake and realized that I had a ton of cake flour.
 
-##List Header
+###List Header
 
 1. List item
 2. List item
@@ -22,9 +22,9 @@ I had found a recipe for coffeecake on Smitten Kitchen and it looked fabulous, b
 True to my pumpkin-loving ways, I have an entirely pumpkin cookbook (A Harvest of Pumpkins and Squash by Lou Seibert Pappas) that has a delicious looking walnut-cranberry pumpkin coffeecake recipe (I haven’t tried that one yet).   This recipe had no crumble, though, so I decided to go with a hybrid and take my favorite parts of each recipe and combine them.  The result was to die for – this cake is truly (link: http://www.dennispkramer.com text: link).
 
 #Pumpkin Coffeecake
-####Adapted from Smitten Kitchen’s Big Crumb Coffeecake & Lou Seibert Pappas’ Cranberry-Walnut Pumpkin Coffeecake
+##Adapted from Smitten Kitchen’s Big Crumb Coffeecake & Lou Seibert Pappas’ Cranberry-Walnut Pumpkin Coffeecake
 
-##Ingredient List For The Crumbs lorem
+###Ingredient List For The Crumbs lorem
 
 - 1/3 cup dark brown sugar 
 - 1/3 cup granulated sugar 
@@ -41,7 +41,7 @@ Combine and set aside.  If you're like us and have no real kitchen and no real l
 Although, now that I'm thinking about it, our kitchen/living room really is a living room...since there's not many other places in this apartment to do your living.  That's neither here nor there - now on with the coffeecake!
 
 
-##Cake
+###Cake
 
 - 1 ¼ cups cake flour
 - 1/3 cup yellow cornmeal

@@ -317,26 +317,33 @@ ul.tags li {
   margin: 50px 0 0;
   padding: 0;
   position: relative;
-  z-index: 1;
 }
 .blogarticle article h1:before,
 .blogarticle article h1:after {
   content: " ";
-  background: #dddddd;
-  width: 100%;
-  height: 1px;
+  width: 150px;
+  height: 5px;
   position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-.blogarticle article h1:before {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   top: 21px;
 }
+.blogarticle article h1:before {
+  left: 0;
+}
 .blogarticle article h1:after {
-  bottom: 21px;
+  right: 0;
 }
 .blogarticle article h2 {
+  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaaaaa;
+}
+.blogarticle article h3 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   font-size: 28px;
   line-height: 32px;
@@ -350,14 +357,28 @@ ul.tags li {
   margin: 0 auto;
   padding: 20px;
   padding-bottom: 0;
+  position: relative;
 }
-.blogarticle article h2:after {
-  content: " ";
-  background: #f0f0f0;
-  width: 50px;
-  height: 4px;
+.blogarticle article h3:before,
+.blogarticle article h3:after {
+  content: "";
   display: block;
-  margin: 18px auto 0;
+  background: #f0f0f0;
+  position: absolute;
+  top: -22px;
+  width: 38px;
+  height: 38px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+}
+.blogarticle article h3:before {
+  left: -22px;
+}
+.blogarticle article h3:after {
+  right: -22px;
 }
 .blogarticle article ol,
 .blogarticle article ul {
@@ -369,10 +390,37 @@ ul.tags li {
   border-top: none;
   max-width: 330px;
   margin: 0 auto;
+  position: relative;
+}
+.blogarticle article ol:before,
+.blogarticle article ol:after,
+.blogarticle article ul:before,
+.blogarticle article ul:after {
+  content: "";
+  display: block;
+  background: #f0f0f0;
+  position: absolute;
+  bottom: -22px;
+  width: 38px;
+  height: 38px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+}
+.blogarticle article ol:before,
+.blogarticle article ul:before {
+  left: -22px;
+}
+.blogarticle article ol:after,
+.blogarticle article ul:after {
+  right: -22px;
 }
 .blogarticle article ol li,
 .blogarticle article ul li {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  line-height: 22px;
 }
 .blogarticle article ol li:last-child,
 .blogarticle article ul li:last-child {
@@ -385,24 +433,16 @@ ul.tags li {
   border: 10px solid #ffffff;
   margin-bottom: 0;
 }
-.blogarticle article h3 {
+.blogarticle article h4 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   font-style: italic;
   font-size: 14px;
+  font-weight: 300;
   line-height: 22px;
   background: #ffffff;
   margin: -38px 0 30px;
   padding: 10px;
   text-align: center;
-}
-.blogarticle article h4 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 10px;
-  color: #aaaaaa;
 }
 footer {
   text-align: center;

@@ -361,25 +361,32 @@ ul.tags{
       margin: 50px 0 0;
       padding: 0;
       position: relative;
-      z-index: 1;
       &:before, &:after{
         content: " ";
-        background: @light-grey;
-        width: 100%;
-        height: 1px;
+        width: 150px;
+        height: 5px;
         position: absolute;
-        left: 0;
-        right: 0;
-        z-index: -1;
+        border-top: 1px solid @light-grey;
+        border-bottom: 1px solid @light-grey;
+        top: 21px;
       }
       &:before{
-        top:21px;
+        left: 0;
       }
       &:after{
-        bottom:21px;
+        right: 0;
       }
     }
-    h2{ //header for list cards
+    h2{ //italic subheader to h1
+      font-family: @serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+      color: lighten(@grey, 20%);
+    }
+    h3{ //header for list cards
       font-family: @serif;
       font-size: 28px;
       line-height: 32px;
@@ -393,17 +400,25 @@ ul.tags{
       margin: 0 auto;
       padding: 20px;
       padding-bottom: 0;
-      &:after{
-        content: " ";
-        background: @background;
-        width: 50px;
-        height: 4px;
+      position: relative;
+      &:before, &:after{
+        content: "";
         display: block;
-        margin: 18px auto 0;
-
+        background: @background;
+        position: absolute;
+        top: -22px;
+        width: 38px;
+        height: 38px;
+        .rounded-corners(200px);
+      }
+      &:before{
+        left: -22px;
+      }
+      &:after{
+        right: -22px;
       }
     }
-    ol, ul{
+    ol, ul{ //list cards
       font-family: @serif;
       font-size: 16px;
       background: @white;
@@ -412,8 +427,26 @@ ul.tags{
       border-top: none;
       max-width: 330px;
       margin: 0 auto;
+      position: relative;
+      &:before, &:after{
+        content: "";
+        display: block;
+        background: @background;
+        position: absolute;
+        bottom: -22px;
+        width: 38px;
+        height: 38px;
+        .rounded-corners(200px);
+      }
+      &:before{
+        left: -22px;
+      }
+      &:after{
+        right: -22px;
+      }
       li{
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        line-height: 22px;
         &:last-child{
           margin-bottom: 0;
         }
@@ -428,24 +461,16 @@ ul.tags{
       border: 10px solid @white;
       margin-bottom: 0;
     }
-    h3{ // caption for images
+    h4{ // caption for images
       font-family: @serif;
       font-style: italic;
       font-size: 14px;
+      font-weight: 300;
       line-height: 22px;
       background: @white;
       margin: -38px 0 30px;
       padding: 10px;
       text-align: center;
-    }
-    h4{ //italic subheader to h1
-      font-family: @serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 18px;
-      text-align: center;
-      margin-top: 10px;
-      color: lighten(@grey, 20%);
     }
   }
 }
