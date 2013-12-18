@@ -9,14 +9,16 @@
   <meta name="viewport" content="initial-scale=1">
 
   <?php snippet('less') ?>
+  <?php echo css('assets/css/animate.css') ?>
 
   <?php echo js('assets/js/jquery-1.10.2.min.js') ?>
+  <?php echo js('assets/js/headroom.js') ?>
   <?php echo js('assets/js/control.js') ?>
 
 </head>
 
 <body>
 
-  <header>
+  <header id="header" class="animated">
     <?php snippet('menu') ?>
   </header>

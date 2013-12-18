@@ -131,13 +131,17 @@ h1.page-title {
   top: 110px;
   margin-left: -150px;
 }
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
 nav.menu {
   width: 100%;
   padding: 18px 0;
   overflow: hidden;
-  z-index: 1;
-  position: fixed;
-  top: 0;
   background: rgba(0,0,0,0.2);
 }
 nav.menu ul {

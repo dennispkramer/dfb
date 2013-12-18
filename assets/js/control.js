@@ -15,9 +15,16 @@ $(window).scroll(function(){
 });
 
 // HEADROOM.JS FOR SCROLLED NAVBAR
-// grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
+var headroom = new Headroom(elem, {
+  "tolerance": 5,
+  "offset": 205,
+  "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp"
+  }
+});
 headroom.init();
+
+// to destroy
+headroom.destroy();
