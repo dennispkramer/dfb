@@ -19,6 +19,6 @@
 
 <body>
 
-  <header id="header" class="animated">
+  <header id="header" class="animated slideDown">
     <?php snippet('menu') ?>
   </header>
