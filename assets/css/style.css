@@ -19,7 +19,7 @@ body {
   box-shadow: 0px -80px 100px 0px rgba(0,0,0,0.5);
 }
 .false-background .content {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .content {
   padding: 0 20px;
@@ -96,7 +96,7 @@ img {
 .image-opacity {
   background: rgba(0,0,0,0.3);
   width: 100%;
-  height: 500px;
+  height: 100%;
   top: 0;
   position: absolute;
   z-index: -2;
@@ -106,7 +106,7 @@ img {
 }
 .image-opacity-fade {
   width: 100%;
-  height: 500px;
+  height: 100%;
   top: 0;
   position: absolute;
   z-index: -2;
@@ -134,7 +134,7 @@ img {
 h1.page-title {
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 44px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -341,61 +341,35 @@ ul.tags li {
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
+  line-height: 42px;
   font-weight: 700;
-  line-height: 34px;
   letter-spacing: 2px;
   margin: 50px 0 0;
-  padding: 14px 0;
   position: relative;
-  border-bottom: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
 }
 .blogarticle article h2 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 18px;
+  font-family: ;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   color: #aaaaaa;
+}
+.blogarticle article img {
+  border: 10px solid #ffffff;
+  margin-bottom: 0;
 }
 .blogarticle article h3 {
   font-family: 'Calendas Plus', Georgia, Times, serif;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 14px;
   font-weight: 300;
+  line-height: 22px;
   background: #ffffff;
-  font-style: italic;
+  margin: -38px 0 30px;
+  padding: 10px;
   text-align: center;
-  border: 10px double #f0f0f0;
-  border-bottom: none;
-  max-width: 330px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-bottom: 0;
-  position: relative;
-}
-.blogarticle article h3:before,
-.blogarticle article h3:after {
-  content: "";
-  display: block;
-  background: #f0f0f0;
-  position: absolute;
-  top: -22px;
-  width: 38px;
-  height: 38px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px;
-  border-radius: 200px;
-}
-.blogarticle article h3:before {
-  left: -22px;
-}
-.blogarticle article h3:after {
-  right: -22px;
 }
 .blogarticle article ol,
 .blogarticle article ul {
@@ -404,35 +378,14 @@ ul.tags li {
   background: #ffffff;
   padding: 20px;
   border: 10px double #f0f0f0;
-  border-top: none;
   max-width: 330px;
   margin: 0 auto;
   position: relative;
-}
-.blogarticle article ol:before,
-.blogarticle article ol:after,
-.blogarticle article ul:before,
-.blogarticle article ul:after {
-  content: "";
-  display: block;
-  background: #f0f0f0;
-  position: absolute;
-  bottom: -22px;
-  width: 38px;
-  height: 38px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px;
-  border-radius: 200px;
-}
-.blogarticle article ol:before,
-.blogarticle article ul:before {
-  left: -22px;
-}
-.blogarticle article ol:after,
-.blogarticle article ul:after {
-  right: -22px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
 }
 .blogarticle article ol li,
 .blogarticle article ul li {
@@ -443,22 +396,31 @@ ul.tags li {
 .blogarticle article ul li:last-child {
   margin-bottom: 0;
 }
+.blogarticle article ol li:first-child,
+.blogarticle article ul li:first-child {
+  font-family: 'Calendas Plus', Georgia, Times, serif;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 300;
+  background: #ffffff;
+  font-style: italic;
+  text-align: center;
+  max-width: 330px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  position: relative;
+}
+.blogarticle article ol li:first-child:after,
+.blogarticle article ul li:first-child:after {
+  content: "";
+  background: #f0f0f0;
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin: 30px auto;
+}
 .blogarticle article ol li {
   margin-left: 20px;
-}
-.blogarticle article img {
-  border: 10px solid #ffffff;
-  margin-bottom: 0;
-}
-.blogarticle article h4 {
-  font-family: 'Calendas Plus', Georgia, Times, serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  background: #ffffff;
-  margin: -38px 0 30px;
-  padding: 10px;
-  text-align: center;
 }
 footer {
   text-align: center;

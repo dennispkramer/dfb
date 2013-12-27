@@ -52,7 +52,7 @@ body {
   -moz-box-shadow: 0px -80px 100px 0px rgba(0, 0, 0, .5);         
   box-shadow: 0px -80px 100px 0px rgba(0, 0, 0, .5);
   .content{
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }
 .content{
@@ -134,7 +134,7 @@ img {
 .image-opacity{
   background: rgba(0,0,0,.3);
   width: 100%;
-  height: 500px;
+  height: 100%;
   top: 0;
   position: absolute;
   z-index: -2;
@@ -145,7 +145,7 @@ img {
 }
 .image-opacity-fade{
   width: 100%;
-  height: 500px;
+  height: 100%;
   top: 0;
   position: absolute;
   z-index: -2;
@@ -172,7 +172,7 @@ img {
 h1.page-title{
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 44px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -383,101 +383,27 @@ ul.tags{
       font-family: @sans-serif;
       text-transform: uppercase;
       text-align: center;
-      font-size: 28px;
+      font-size: 34px;
+      line-height: 42px;
       font-weight: 700;
-      line-height: 34px;
       letter-spacing: 2px;
       margin: 50px 0 0;
-      padding: 14px 0;
       position: relative;
-      border-bottom: 1px solid @light-grey;
-      border-top: 1px solid @light-grey;
     }
-    h2{ //italic subheader to h1
-      font-family: @serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 18px;
+    h2{ //subheader to h1
+      font-family: @sanserif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 5px;
       color: lighten(@grey, 20%);
-    }
-    h3{ //header for list cards
-      font-family: @serif;
-      font-size: 28px;
-      line-height: 32px;
-      font-weight: 300;
-      background: @white;
-      font-style: italic;
-      text-align: center;
-      border: 10px double @background;
-      border-bottom: none;
-      max-width: 330px;
-      margin: 0 auto;
-      padding: 20px;
-      padding-bottom: 0;
-      position: relative;
-      &:before, &:after{
-        content: "";
-        display: block;
-        background: @background;
-        position: absolute;
-        top: -22px;
-        width: 38px;
-        height: 38px;
-        .rounded-corners(200px);
-      }
-      &:before{
-        left: -22px;
-      }
-      &:after{
-        right: -22px;
-      }
-    }
-    ol, ul{ //list cards
-      font-family: @serif;
-      font-size: 16px;
-      background: @white;
-      padding: 20px;
-      border: 10px double @background;
-      border-top: none;
-      max-width: 330px;
-      margin: 0 auto;
-      position: relative;
-      &:before, &:after{
-        content: "";
-        display: block;
-        background: @background;
-        position: absolute;
-        bottom: -22px;
-        width: 38px;
-        height: 38px;
-        .rounded-corners(200px);
-      }
-      &:before{
-        left: -22px;
-      }
-      &:after{
-        right: -22px;
-      }
-      li{
-        margin-bottom: 18px;
-        line-height: 22px;
-        &:last-child{
-          margin-bottom: 0;
-        }
-      }
-    }
-    ol{
-      li{
-        margin-left: 20px;
-      }
     }
     img {
       border: 10px solid @white;
       margin-bottom: 0;
     }
-    h4{ // caption for images
+    h3{ // caption for images
       font-family: @serif;
       font-size: 14px;
       font-weight: 300;
@@ -486,6 +412,50 @@ ul.tags{
       margin: -38px 0 30px;
       padding: 10px;
       text-align: center;
+    }
+    ol, ul{ //list cards
+      font-family: @serif;
+      font-size: 16px;
+      background: @white;
+      padding: 20px;
+      border: 10px double @background;
+      max-width: 330px;
+      margin: 0 auto;
+      position: relative;
+      .rounded-corners(20px);
+      li{
+        margin-bottom: 18px;
+        line-height: 22px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        &:first-child{
+          font-family: @serif;
+          font-size: 26px;
+          line-height: 30px;
+          font-weight: 300;
+          background: @white;
+          font-style: italic;
+          text-align: center;
+          max-width: 330px;
+          margin: 0 auto;
+          padding-bottom: 5px;
+          position: relative;
+          &:after{
+            content: "";
+            background: @background;
+            display: block;
+            width: 50px;
+            height: 4px;
+            margin: 30px auto;
+          }
+        }
+      }
+    }
+    ol{
+      li{
+        margin-left: 20px;
+      }
     }
   }
 }
