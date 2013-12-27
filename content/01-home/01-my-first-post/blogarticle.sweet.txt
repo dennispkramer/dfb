@@ -1,5 +1,7 @@
 Title: This is my first sweet article
 ----
+Subheader: This is my subheader
+----
 Date: 08.12.2011
 ----
 Tags: pumpkin, coffee, tea, cinnamon
