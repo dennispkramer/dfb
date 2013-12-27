@@ -111,27 +111,39 @@ img {
   position: absolute;
   z-index: -2;
 }
-.title-wrap {
+.title-wrap,
+.default-title-wrap {
   text-align: center;
-  max-width: 740px;
-  margin: 130px auto 80px;
+  margin: 0 auto;
   color: #ffffff;
 }
-.title-wrap h1.page-title {
+.title-wrap {
+  max-width: 740px;
+  margin: 130px auto 80px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+.default-title-wrap {
+  background: #7747ac;
+  margin-bottom: 30px;
+}
+.default-title-wrap h1 {
+  margin: 0 auto;
+  padding: 160px 0 100px;
+  max-width: 740px;
+}
+h1.page-title {
   margin-bottom: 0;
   font-weight: 600;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
-.title-wrap h2.page-subheader {
+h2.page-subheader {
   font-family: 'Calendas Plus', Georgia, Times, serif;
   margin: 10px 0 70px;
   font-weight: 300;
   font-size: 26px;
   font-style: italic;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 .default-header {
   height: 350px;

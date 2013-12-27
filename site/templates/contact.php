@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<div class="default-header">
+<div class="default-title-wrap">
   <h1 class="page-title"><?php echo html($page->title()) ?></h1>
 </div>
 

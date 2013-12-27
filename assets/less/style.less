@@ -150,27 +150,38 @@ img {
   position: absolute;
   z-index: -2;
 }
-.title-wrap{
+.title-wrap, .default-title-wrap{
   text-align: center;
+  margin: 0 auto;
+  color: @white;
+}
+.title-wrap{
   max-width: 740px;
   margin: 130px auto 80px;
-  color: @white;
-  h1.page-title{
-    margin-bottom: 0;
-    font-weight: 600;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,.3);
+  text-shadow: 1px 1px 4px rgba(0,0,0,.3);
+}
+.default-title-wrap{
+  background: @purple;
+  margin-bottom: 30px;
+  h1{
+    margin: 0 auto;
+    padding: 160px 0 100px;
+    max-width: 740px;
   }
-  h2.page-subheader{
-    font-family: @serif;
-    margin: 10px 0 70px;
-    font-weight: 300;
-    font-size: 26px;
-    font-style: italic;
-    text-shadow: 1px 1px 4px rgba(0,0,0,.3);
-  }
+}
+h1.page-title{
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h2.page-subheader{
+  font-family: @serif;
+  margin: 10px 0 70px;
+  font-weight: 300;
+  font-size: 26px;
+  font-style: italic;
 }
 .default-header{
     height: 350px;

@@ -1,9 +1,4 @@
 <?php snippet('header') ?>
-<div class="default-header">
-  <img class="page-title" src="/assets/images/logo.png"></img>
-</div>
-<section class="content blog">
-
   <!-- display posts with a specific tag -->
   <?php if(param('tag')):
 
@@ -13,8 +8,9 @@
                      ->flip()
                      ->paginate(10);
   ?>
-
-  <h2>Posts tagged with "<?php echo param('tag'); ?>"</h2>
+  <div class="default-title-wrap">
+    <h1 class="page-title">Posts tagged with "<?php echo param('tag'); ?>"</h1>
+  </div>
 
   <!-- display all posts in blog -->
   <?php else:
@@ -25,6 +21,9 @@
                      ->paginate(10);
 
   ?>
+  <div class="default-header">
+    <img class="page-title" src="/assets/images/logo.png"></img>
+  </div>
 
   <!-- display tagcloud -->
   <?php
@@ -36,14 +35,16 @@
   ));
 
   ?>
-
-  <ul class="tags tagcloud">
-    <?php foreach($tags as $tag): ?>
-      <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
-    <?php endforeach ?>
-  </ul>
+  <section class="content blog">
+    <ul class="tags tagcloud">
+      <?php foreach($tags as $tag): ?>
+        <li<?php if($tag->isActive()) echo ' class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
+      <?php endforeach ?>
+    </ul>
+  </section>
 
   <? endif; ?>
+  <section class="content blog">
   <!-- display article list -->
   <?php snippet('articlelist', array('articles' => $articles)); ?>
 
