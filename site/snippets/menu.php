@@ -10,6 +10,7 @@ if($items->count() > 0):
 <nav class="menu">
 	<div class="content">
 		<ul>
+			<li><a href="<?php echo url() ?>" class="logo">DFB</a></li>
 			<?php foreach($items as $item): ?>
 			<li><a<?php ecco($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
 			<?php endforeach ?>
