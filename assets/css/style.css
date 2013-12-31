@@ -161,7 +161,7 @@ h2.page-subheader {
   top: 128px;
   margin-left: -150px;
 }
-#header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
